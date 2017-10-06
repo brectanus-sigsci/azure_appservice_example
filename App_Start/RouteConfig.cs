@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace aspnet_get_started
+namespace Sample_MVCApp
 {
     public class RouteConfig
     {
@@ -18,6 +18,17 @@ namespace aspnet_get_started
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+
+            routes.MapRoute(
+               name: "User",
+               url: "User/{action}/{id}",
+               defaults: new { controller = "User", action = "UserAdd", id = UrlParameter.Optional }
+           );
+            routes.MapRoute(
+               name: "UserAdd",
+               url: "User/Add/{id}",
+               defaults: new { controller = "User", action = "UserAdd", id = UrlParameter.Optional }
+           );
         }
     }
 }

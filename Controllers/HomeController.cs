@@ -4,27 +4,16 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace aspnet_get_started.Controllers
+namespace Sample_MVCApp.Controllers
 {
     public class HomeController : Controller
     {
         public ActionResult Index()
         {
-            return View();
-        }
-
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
 
             return View();
         }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
+       
     }
 }
