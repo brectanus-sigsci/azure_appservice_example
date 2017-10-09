@@ -283,7 +283,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-    <None Include="MsgPack.xml" CopyToOutputDirectory="Always" />
+    <Content Include="MsgPack.xml" CopyToOutputDirectory="Always" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
