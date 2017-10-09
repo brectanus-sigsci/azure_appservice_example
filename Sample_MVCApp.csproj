@@ -159,10 +159,6 @@
       <Private>True</Private>
       <HintPath>..\packages\MsgPack\MsgPack.dll</HintPath>
     </Reference>
-    <Reference Include="MsgPackXML">
-      <Private>True</Private>
-      <HintPath>..\packages\MsgPack\MsgPack.xml</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\AuthConfig.cs" />
@@ -287,6 +283,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <None Include="MsgPack.xml" CopyToOutputDirectory="Always" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
