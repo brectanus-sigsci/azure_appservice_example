@@ -276,6 +276,7 @@
     <Content Include="App_Data\jobs\continuous\sigsci-agent\sigsci-agent.exe" />
     <Content Include="App_Data\jobs\continuous\sigsci-agent\run.cmd" />
     <Content Include="App_Data\jobs\continuous\sigsci-agent\agent.conf" />
+    <Content Include="MsgPack.xml" CopyToOutputDirectory="Always" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -283,7 +284,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-    <Content Include="MsgPack.xml" CopyToOutputDirectory="Always" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
