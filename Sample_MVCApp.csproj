@@ -276,7 +276,6 @@
     <Content Include="App_Data\jobs\continuous\sigsci-agent\sigsci-agent.exe" />
     <Content Include="App_Data\jobs\continuous\sigsci-agent\run.cmd" />
     <Content Include="App_Data\jobs\continuous\sigsci-agent\agent.conf" />
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
