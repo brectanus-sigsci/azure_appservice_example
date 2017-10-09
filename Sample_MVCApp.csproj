@@ -277,7 +277,7 @@
     <Content Include="App_Data\jobs\continuous\sigsci-agent\run.cmd" />
     <Content Include="App_Data\jobs\continuous\sigsci-agent\agent.conf" />
     <Content Include="MsgPack.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>
