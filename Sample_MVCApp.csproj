@@ -276,8 +276,6 @@
     <Content Include="App_Data\jobs\continuous\sigsci-agent\sigsci-agent.exe" />
     <Content Include="App_Data\jobs\continuous\sigsci-agent\run.cmd" />
     <Content Include="App_Data\jobs\continuous\sigsci-agent\agent.conf" />
-    <Content Include="MsgPack.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>
@@ -318,7 +316,12 @@
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
   </Target> -->
+  <Target Name="AfterBuild">
+   <ItemGroup>
+    <Content Include="MsgPack.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+   </ItemGroup>
+  </Target>
 </Project>
