@@ -284,6 +284,11 @@
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="MsgPack.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -315,12 +320,7 @@
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
-  </Target> -->
+  </Target> 
   <Target Name="AfterBuild">
-   <ItemGroup>
-    <Content Include="MsgPack.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-   </ItemGroup>
-  </Target>
+  </Target> -->
 </Project>
