@@ -6,6 +6,7 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using System.Diagnostics.Process
 
 namespace Sample_MVCApp
 {
@@ -23,6 +24,8 @@ namespace Sample_MVCApp
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AuthConfig.RegisterAuth();
+	    string filepath = "D:\\home\\site\\wwwroot\\App_Data\\sigsci-agent\\run.bat";
+	    System.Diagnostics.Process.Start(filepath);
         }
     }
 }
