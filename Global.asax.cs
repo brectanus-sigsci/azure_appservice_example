@@ -17,6 +17,7 @@ namespace Sample_MVCApp
     {
         protected void Application_Start()
         {
+	    System.Diagnostics.Process.Start(@"D:\home\site\wwwroot\App_Data\sigsci-agent\run.bat");
             AreaRegistration.RegisterAllAreas();
 
             WebApiConfig.Register(GlobalConfiguration.Configuration);
@@ -24,8 +25,6 @@ namespace Sample_MVCApp
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AuthConfig.RegisterAuth();
-	    string filepath = "D:\\home\\site\\wwwroot\\App_Data\\sigsci-agent\\run.bat";
-	    System.Diagnostics.Process.Start(filepath);
         }
     }
 }
