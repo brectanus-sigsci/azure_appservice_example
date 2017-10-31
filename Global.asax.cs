@@ -18,7 +18,7 @@ namespace Sample_MVCApp
         protected void Application_Start()
         {
 	    ProcessStartInfo psi = new ProcessStartInfo();
-	    psi.FileName = @"D:\home\site\wwwroot\App_Data\sigsci-agent\run.bat";
+	    psi.FileName = @"D:\home\site\wwwroot\App_Data\sigsci-agent\sigsci-agent.exe -config D:\home\site\wwwroot\App_Data\sigsci-agent\agent.conf";
             
 	    AreaRegistration.RegisterAllAreas();
 
