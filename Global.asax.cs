@@ -17,8 +17,10 @@ namespace Sample_MVCApp
     {
         protected void Application_Start()
         {
-	    System.Diagnostics.Process.Start(@"D:\home\site\wwwroot\App_Data\sigsci-agent\run.bat");
-            AreaRegistration.RegisterAllAreas();
+	    ProcessStartInfo psi = new ProcessStartInfo();
+	    psi.FileName = @"D:\home\site\wwwroot\App_Data\sigsci-agent\run.bat";
+            
+	    AreaRegistration.RegisterAllAreas();
 
             WebApiConfig.Register(GlobalConfiguration.Configuration);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
