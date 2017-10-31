@@ -273,11 +273,11 @@
     <Content Include="Views\User\UserAdd.cshtml" />
     <Content Include="Views\User\Index.cshtml" />
   </ItemGroup>
-  <!-- ItemGroup>
+  <ItemGroup>
     <Content Include="App_Data\jobs\continuous\sigsci-agent\sigsci-agent.exe" />
     <Content Include="App_Data\jobs\continuous\sigsci-agent\run.bat" />
     <Content Include="App_Data\jobs\continuous\sigsci-agent\agent.conf" />
-  </ItemGroup -->
+  </ItemGroup>
   <!-- ItemGroup>
     <Content Include="App_Data\sigsci-agent\sigsci-agent.exe" />
     <Content Include="App_Data\sigsci-agent\run.bat" />
